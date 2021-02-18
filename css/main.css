@@ -71,7 +71,7 @@ img{
 }
 /* Section interactive */
 .interactive{
-    padding: 10% 0;
+    padding: 10% 2%;
     position: relative;
     overflow: hidden;
 }
@@ -100,7 +100,7 @@ img{
 }
 /* Creations */
 .creations{
-    padding: 0 0 10% 0;
+    padding: 2% 2% 10% 2%;
 }
 .creations__header{
     display: flex;
@@ -191,4 +191,142 @@ footer{
 .redes__rights{
     padding: 1em 0;
     height: 60%;
+}
+@media (max-width: 1024px){
+    .hero__info{
+        width: 60%;
+    }
+    .interactive__info-title{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 800px) and (min-width: 600px){
+    body{
+        font-size: 10px;
+    }
+    .interactive__info-title{
+        font-size: 1.2rem;
+    }
+    .creations__header-title{
+        font-size: 1.8rem;
+    }
+    .card-title{
+        font-size: .8rem;
+    }
+    .options__menu a{
+        margin-right: 1em;
+    }
+}
+@media (max-width: 480px) and (min-width:375px){
+    body{
+        overflow-x: hidden;
+    }
+    .container{
+        width: 90%;
+    }
+    .hero__nav{
+        justify-content: center;
+    }
+    .hero__nav-options{
+        display: none;
+    }
+    .hero__info{
+        width: 100%;
+    }
+    .hero__info-title{
+        font-size: 1.8rem;
+    }
+    .interactive{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10% 0;
+    }
+    .interactive__info{
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        padding: 5% 0;
+        text-align: center;
+    }
+    .interactive__img{
+        width: 100%;
+    }
+    .interactive__info-title{
+        font-size: 1.6rem;
+    }
+    .creations__header-cta{
+        display: none;
+    }
+    .creations__header-title{
+        font-size: 2rem;
+    }
+    .creations__header{
+        justify-content: center;
+    }
+    .creations__cards{
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(8, max-content);
+    }
+    .card-img1{
+        content: url("../images/mobile/image-deep-earth.jpg");
+    }
+    .card-img2{
+        content: url("../images/mobile/image-night-arcade.jpg");
+    }
+    .card-img3{
+        content: url("../images/mobile/image-soccer-team.jpg");
+    }
+    .card-img4{
+        content: url("../images/mobile/image-grid.jpg");
+    }
+    .card-img5{
+        content: url("../images/mobile/image-from-above.jpg");
+    }
+    .card-img6{
+        content: url("../images/mobile/image-pocket-borealis.jpg");
+    }
+    .card-img7{
+        content: url("../images/mobile/image-curiosity.jpg");
+    }
+    .card-img8{
+        content: url("../images/mobile/image-fisheye.jpg");
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .options{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .options__logo-img{
+        width: 100%;
+    }
+    .options__menu{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em 1em;
+    }
+    .options__menu li{
+        margin: .6em;        
+    }
+    .options__menu a{
+        margin-right: 0;
+    }
+    .redes{
+        align-items: center;
+    }
+    .redes__icon i{
+        font-size: 1.4em;
+    }
+    .icon{
+        padding: 0 .4em;
+    }
 }
