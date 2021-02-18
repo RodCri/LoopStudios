@@ -2,58 +2,107 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
   <title>Frontend Mentor | Loopstudios landing page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  About
-  Careers
-  Events
-  Products
-  Support
-
-  Immersive experiences that deliver
-
-  The leader in interactive VR
-
-  Founded in 2011, Loopstudios has been producing world-class virtual reality 
-  projects for some of the best companies around the globe. Our award-winning 
-  creations have transformed businesses through digital experiences that bind 
-  to their brand.
-
-  Our creations
-
-  See all
-
-  Deep earth
-  Night arcade
-  Soccer team VR
-  The grid
-  From up above VR
-  Pocket borealis
-  The curiosity
-  Make it fisheye
-
-  About
-  Careers
-  Events
-  Products
-  Support
-
-  © 2021 Loopstudios. All rights reserved.
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <header class="hero">
+    <nav class="hero__nav container">
+      <div class="hero__nav-logo">
+        <img src="images/logo.svg" alt="logo" class="nav-img">
+      </div>
+      <div class="hero__nav-options">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Support</a></li>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="hero__info">
+        <h1 class="hero__info-title">Immersive <br>experiences<br> that deliver</h1>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="container interactive">
+        <img src="images/desktop/image-interactive.jpg" alt="interactive"class="interactive__img">
+        <div class="interactive__info">
+          <h2 class="interactive__info-title">The leader in interactive VR</h2>
+          <p class="interactive__info-text">Founded in 2011, Loopstudios has beenproducing world-class virtual reality projects for some of the bestcompanies around the globe. Our award-winning creations have transformedbusinesses through digital experiences that bind to their brand.</p>
+        </div>
+    </section>
+    <section class="container creations">
+      <div class="creations__header">
+        <h2 class="creations__header-title">OUR CREATIONS</h2>
+        <span class="creations__header-cta">SEE ALL</span>
+      </div>
+      <div class="creations__cards">
+        <div class="card">
+          <img src="images/desktop/image-deep-earth.jpg" alt="earth" class="card-img">
+          <span class="card-title">Deep<br>earth</span>
+        </div>
+        <div class="card">
+          <img src="images/desktop/image-night-arcade.jpg" alt="arcade" class="card-img">
+          <span class="card-title">Night<br>arcade</span>
+        </div>
+        <div class="card">
+          <img src="images/desktop/image-soccer-team.jpg" alt="soccer" class="card-img">
+          <span class="card-title">Soccer<br>team VR</span>
+        </div>
+        <div class="card">
+          <img src="images/desktop/image-grid.jpg" alt="grid" class="card-img">
+          <span class="card-title">The<br>grid</span>
+        </div>
+        <div class="card">
+          <img src="images/desktop/image-from-above.jpg" alt="above" class="card-img">
+          <span class="card-title">From up<br> above VR</span>
+        </div>
+        <div class="card">
+          <img src="images/desktop/image-pocket-borealis.jpg" alt="borealis" class="card-img">
+          <span class="card-title">Pocket<br> borealis</span>
+        </div>
+        <div class="card">
+          <img src="images/desktop/image-curiosity.jpg" alt="curiosity" class="card-img">
+          <span class="card-title">The<br> curiosity</span>
+        </div>
+        <div class="card">
+          <img src="images/desktop/image-fisheye.jpg" alt="fisheye" class="card-img">
+          <span class="card-title">Make it<br>   fisheye</span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container footer">
+      <div class="options">
+        <div class="options__logo">
+          <img src="images/logo.svg" alt="logo" class="options__logo-img">
+        </div>
+        <div class="options__menu">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Support</a></li>
+        </div>
+      </div>
+      <div class="redes">
+        <div class="redes__icon">
+          <span class="icon"><i class="fa fa-facebook-square" aria-hidden="true"></i></span>
+          <span class="icon"><i class="fa fa-twitter-square" aria-hidden="true"></i></span>
+          <span class="icon"><i class="fa fa-pinterest-square" aria-hidden="true"></i></span>
+          <span class="icon"><i class="fa fa-instagram" aria-hidden="true"></i></span>
+        </div>
+        <div class="redes__rights">
+          <span>© 2021 Loopstudios. All rights reserved.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
