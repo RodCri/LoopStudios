@@ -202,7 +202,13 @@ footer{
 }
 @media (max-width: 800px) and (min-width: 600px){
     body{
-        font-size: 10px;
+        overflow-x: hidden;
+    }
+    .hero__nav{
+        justify-content: center;
+    }
+    .hero__nav-options{
+        display: none;
     }
     .interactive__info-title{
         font-size: 1.2rem;
@@ -216,10 +222,20 @@ footer{
     .options__menu a{
         margin-right: 1em;
     }
+    .creations__cards{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(4, max-content);
+    }
 }
-@media(max-width: 600px) and (min-width: 480px){
+@media (max-width: 600px) and (min-width: 480px){
     body{
         overflow-x: hidden;
+    }
+    .hero__nav{
+        justify-content: center;
+    }
+    .hero__nav-options{
+        display: none;
     }
     .creations__header-cta{
         display: none;
